@@ -7,7 +7,9 @@
 <body>
 
   <header class="page-header">
-    <h1 class="page-header__title main-header">Погнали?</h1>
+    <a class="page-header__title main-header" href="">
+      <h1>Погнали?</h1>
+    </a>
 
     <nav class="main-nav">
       <ul class="main-nav nav-list">
@@ -20,17 +22,15 @@
     </nav>
 
     <div class="page-header__contacts contacts">
-      <tel class="contacts__tel">8 800 555-86-28</tel>
-      <mail class="contacts__mail">mail@htmlacademy.ru</mail>
+      <a class="contacts__tel" href="tel:+88005558628">8 800 555-86-28</a>
+      <a class="contacts__mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
     </div>
 
-    <div class="page-header__social social">
-      <ul class="social__list">
-        <li class="social__item"><a href="http://facebook.com">Мы в Фейсбуке</a></li>
-        <li class="social__item"><a href="http://vkontakte.ru">Мы в Вконтакте</a></li>
-        <li class="social__item"><a href="http://instagram.com">Мы в Инстаграме</a></li>
-      </ul>
-    </div>
+    <ul class="page-header__social social">
+      <li class="social__item"><a href="http://facebook.com">Мы в Фейсбуке</a></li>
+      <li class="social__item"><a href="http://vkontakte.ru">Мы в Вконтакте</a></li>
+      <li class="social__item"><a href="http://instagram.com">Мы в Инстаграме</a></li>
+    </ul>
   </header>
 
   <main class="page-main">
@@ -46,7 +46,7 @@
     <section class="about-service">
       <blockquote class="about-service__quote review">
         <p class="review__text">«Лучшее приложение, что я видел в жизни!»</p>
-        <site class="review__author">Мурат Эльтазин<br>главный редактор газеты «гаджетлайф»</site>
+        <cite class="review__author">Мурат Эльтазин<br><br>главный редактор газеты «гаджетлайф»</cite>
       </blockquote>
       
       <ul class="about-service__list methods-list">
@@ -178,23 +178,22 @@
 
     <section class="advertisment">
       <div class="advertisment__wrapper">
-        <h2 class="visually-hidden">Платные услуги</h2>
-        <b class="advertisment__slogan">Добавьте свой профиль</b>
+        <h2 class="advertisment__slogan">Добавьте свой профиль</h2>
         <ul class="advertisment__list advertising">
           <li class="advertising__item">
             <p class="advertising__description">Базовое размещение</p>
-            <span class="advertising__price">Бесплатно</span>
+            <p class="advertising__price">Бесплатно</p>
             <span class="advertising__order">1</span>
           </li>
 
           <li class="advertising__item">
             <p class="advertising__description">Вывод на первых позициях</p>
-            <span class="advertising__price">99 руб./мес</span>
+            <p class="advertising__price">99 руб./мес</p>
             <span class="advertising__order">2</span>
           </li>
           <li class="advertising__item">
             <p class="advertising__description">Кастомный цвет карточки</p>
-            <span class="advertising__price">59 руб./мес</span>
+            <p class="advertising__price">59 руб./мес</p>
             <span class="advertising__order">3</span>
           </li>
         </ul>
