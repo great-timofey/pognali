@@ -1,0 +1,30 @@
+.page-header {
+  height: 70px;
+  max-width: 320px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $dark-blue;
+  padding: 25px;
+}
+
+.page-header__toggle {
+  position: relative;
+  width: 30px;
+  border: none;
+  height: 3px;
+  background-color: $dark;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -8px;
+    right: 0;
+    width: 30px;
+    height: 3px;
+    color: white;
+    border-bottom: 3px solid $white;
+    box-shadow: 0 8px 0 $white;
+  }
+}
+

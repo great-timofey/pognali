@@ -1,0 +1,49 @@
+.methods-list {
+  @include list-reset();
+
+  margin: 0 0 70px 0;
+  padding: 0;
+
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.methods-list__item {
+  display: flex;
+  padding: 23px;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+
+  font-family: "BloggerSans Bold", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+  color: $dark;
+
+  &:first-child {
+    background-color: $mango-two;
+  }
+
+  &:nth-child(2) {
+    background-color: $mango;
+  }
+
+  &:nth-child(3) {
+    background-color: $mango-three;
+  }
+
+  &:last-child {
+    background-color: $light-gold;
+  }
+}
+
+.methods-list__description {
+  margin: 0;
+  padding: 0;
+}
+
+.methods-list__order {
+  align-self: flex-start;
+  color: $white;
+}

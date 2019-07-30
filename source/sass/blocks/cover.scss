@@ -1,0 +1,18 @@
+.cover__wrapper {
+  max-width: 320px;
+  padding: 25px 25px 0;
+  height: 440px;
+  position: relative;
+  background-image:  url("../img/traveller-illustration-mobile@1x.png"), url("../img/globe-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+.cover__header {
+  color: $white;
+  font-family: "BloggerSans Bold", sans-serif;
+  margin: 0 15px;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+}

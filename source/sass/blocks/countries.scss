@@ -1,0 +1,68 @@
+.countries {
+  @include list-reset();
+
+  margin: 0;
+  padding: 0;
+  margin-bottom: 25px;
+}
+
+.countries__item {
+  margin-bottom: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.countries__wrapper {
+  padding: 25px;
+  position: relative;
+  border-radius: 10px;
+  background-color: $white;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: -10px;
+    left: 25px;
+    width: 35px;
+    height: 24px;
+    background-color: $dark;
+  }
+}
+
+.countries__name {
+  margin: 0 0 5px;
+  font-family: "BloggerSans Bold", sans-serif;
+  font-size: 21px;
+  font-weight: bold;
+  color: $dark;
+}
+
+.countries__slogan {
+  font-family: "BloggerSans Medium", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.13;
+  color: $greyish-brown-30;
+}
+
+.countries__visitors {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  font-family: "BloggerSans Medium", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.88;
+  text-align: right;
+  color: $greyish-brown-30;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 11px;
+    height: 11px;
+    top: 8px;
+    left: -20px;
+    background-image: url("../img/user.svg");
+  }
+}

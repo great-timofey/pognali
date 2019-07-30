@@ -12,7 +12,7 @@
       <img src="img/logo-mobile-white@1x.png" alt="Погнали?" width="100" height="19">
     </a>
 
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--close">
       <ul class="main-nav nav-list">
         <li class="nav-list__item"><a href="#">О сервисе</a></li>
         <li class="nav-list__item"><a href="#">Направления</a></li>
@@ -20,67 +20,102 @@
       </ul>
 
       <a class="main-nav__authorize button button--authorize" href="authorize.html">Авторизация</a>
+
+      <div class="page-header__contacts contacts">
+        <a class="contacts__tel" href="tel:+88005558628">8 800 555-86-28</a>
+        <a class="contacts__mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+      </div>
+
+      <ul class="page-header__social social">
+        <li class="social__item"><a href="http://facebook.com">Мы в Фейсбуке</a></li>
+        <li class="social__item"><a href="http://vkontakte.ru">Мы в Вконтакте</a></li>
+        <li class="social__item"><a href="http://instagram.com">Мы в Инстаграме</a></li>
+      </ul>
     </nav>
 
-    <div class="page-header__contacts contacts">
-      <a class="contacts__tel" href="tel:+88005558628">8 800 555-86-28</a>
-      <a class="contacts__mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-    </div>
-
-    <ul class="page-header__social social">
-      <li class="social__item"><a href="http://facebook.com">Мы в Фейсбуке</a></li>
-      <li class="social__item"><a href="http://vkontakte.ru">Мы в Вконтакте</a></li>
-      <li class="social__item"><a href="http://instagram.com">Мы в Инстаграме</a></li>
-    </ul>
+    <button class="page-header__toggle">
+      <span class="visually-hidden">Открыть / Закрыть меню</span>
+    </button>
   </header>
 
   <main class="page-main">
     <section class="cover">
-      <h2 class="cever__header">В путешествие с крутыми попутчиками!</h2>
-      <ul class="cever__actions actions">
-        <li class="actions__item"><a href="tel:1-555-555-5555">Позвонить нам</a></li>
-        <li class="actions__item"><a href="mailto:mail@htmlacademy.ru">Написать нам</a></li>
-        <li class="actions__item"><a href="authorize.html">Авторизация</a></li>
-      </ul>
+      <div class="cover__wrapper">
+        <h2 class="cover__header">В путешествие с крутыми попутчиками!</h2>
+        <ul class="cover__actions actions">
+          <li class="actions__item actions__item--mobile"><a href="tel:1-555-555-5555">Позвонить нам
+            <svg width="18" height="16" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              viewBox="0 0 36 36" style="enable-background:new 0 0 36 36;" xml:space="preserve">
+            <style type="text/css">
+              .st0{fill:#010101;}
+            </style>
+            <path class="st0" d="M18,0C11.6,0,5.2,1.1,2.8,3.4C0.9,5.3,0.2,8.7,0,10.8c0,0,0,0.2,0,0.3c0,0.8,0.7,1.5,1.5,1.5
+              c0.1,0,3.7-0.3,5.9-0.5c0.1,0,0.1,0,0.2,0c0.8,0,1.5-0.7,1.5-1.5l0-3C9,6.7,9.7,6,10.7,6h14.7C26.2,6,27,6.7,27,7.7l0,3
+              c0,0.8,0.7,1.5,1.5,1.5c0.1,0,0.1,0,0.2,0c2.2,0.2,5.8,0.5,5.9,0.5c0.8,0,1.5-0.7,1.5-1.5c0-0.1,0-0.3,0-0.3
+              c-0.2-2.1-0.9-5.5-2.8-7.4C30.8,1.1,24.4,0,18,0z M18,19.5c-1.7,0-3,1.3-3,3s1.3,3,3,3c1.7,0,3-1.3,3-3S19.7,19.5,18,19.5z
+              M15.7,12.7v-1.9c0-1-0.8-1.9-1.9-1.9S12,9.8,12,10.9v1.9L1.9,23.6c-0.7,0.7-1.1,1.6-1.1,2.7v3c0,1.7,1.3,3,3,3h0.8v1.9
+              c0,1,0.8,1.9,1.9,1.9s1.9-0.8,1.9-1.9v-1.9h19.5v1.9c0,1,0.8,1.9,1.9,1.9c1,0,1.9-0.8,1.9-1.9v-1.9h0.8c1.7,0,3-1.3,3-3v-3
+              c0-1.1-0.4-2-1.1-2.7L24,12.7v-1.9c0-1-0.8-1.9-1.9-1.9s-1.9,0.8-1.9,1.9v1.9H15.7z M18,16.5c3.3,0,6,2.7,6,6c0,3.3-2.7,6-6,6
+              c-3.3,0-6-2.7-6-6C12,19.2,14.7,16.5,18,16.5z"/>
+            </svg>
+          </li>
+          <li class="actions__item actions__item--mail"><a href="mailto:mail@htmlacademy.ru">Написать нам
+            <svg width="18" height="14" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              viewBox="0 0 36 26" style="enable-background:new 0 0 36 26;" xml:space="preserve">
+            <style type="text/css">
+              .st0{fill:#010101;}
+            </style>
+            <path class="st0" d="M0,23c0,1.6,1.3,3,3,3h30c1.7,0,3-1.3,3-3V3c0-1.6-1.3-3-3-3H3C1.3,0,0,1.3,0,3L0,23L0,23z M11,13L4.2,6.2
+              c-0.6-0.6-0.6-1.5,0-2c0.6-0.6,1.5-0.6,2.1,0l11,10.9c0.4,0.4,1.2,0.4,1.6,0l11-10.9c0.6-0.6,1.5-0.6,2.1,0c0.6,0.6,0.6,1.5,0,2
+              L25,13l6.9,6.8c0.6,0.6,0.6,1.5,0,2c-0.6,0.6-1.5,0.6-2.1,0l-6.9-6.8c0,0-2.1,2.2-2.5,2.5c-0.6,0.6-1.4,1-2.4,1
+              c-0.9,0-1.8-0.4-2.4-1c-0.4-0.4-2.5-2.5-2.5-2.5l-6.9,6.8c-0.6,0.6-1.5,0.6-2.1,0c-0.6-0.6-0.6-1.5,0-2L11,13z"/>
+            </svg>
+            </a>
+          </li>
+          <li class="actions__item actions__item--auth"><a href="authorize.html">Авторизация</a></li>
+        </ul>
+      </div>
     </section>
 
     <section class="about-service">
-      <blockquote class="about-service__quote review">
-        <p class="review__text">«Лучшее приложение, что я видел в жизни!»</p>
-        <cite class="review__author">Мурат Эльтазин главный редактор газеты «гаджетлайф»</cite>
-      </blockquote>
-      
-      <ul class="about-service__list methods-list">
-        <li class="methods-list__item">
-          <span class="methods-list__order">1</span>
-          <p class="methods-list__description">Выберите<br>направление</p>
-        </li>
-        <li class="methods-list__item">
-          <span class="methods-list__order">2</span>
-          <p class="methods-list__description">Изучите идеи<br>путешественников</p>
-        </li>
-        <li class="methods-list__item">
-          <span class="methods-list__order">3</span>
-          <p class="methods-list__description">Находите тех,<br>кто похож на вас</p>
-        </li>
-        <li class="methods-list__item">
-          <span class="methods-list__order">4</span>
-          <p class="methods-list__description">Путешествуйте<br>вместе!</p>
-        </li>
-      </ul>
+      <div class="about-service__wrapper">
+        <blockquote class="about-service__quote">
+          <p>«Лучшее приложение, что я видел в жизни!»</p>
+          <cite>Мурат Эльтазин главный редактор газеты «гаджетлайф»</cite>
+        </blockquote>
 
-      <h2 class="about-service__title">О сервисе</h2>
-      <p class="about-service__description">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.</p>
-      <p class="about-service__slogan">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</p>
+        <ul class="about-service__list methods-list">
+          <li class="methods-list__item">
+            <span class="methods-list__order">1</span>
+            <p class="methods-list__description">Выберите<br>направление</p>
+          </li>
+          <li class="methods-list__item">
+            <span class="methods-list__order">2</span>
+            <p class="methods-list__description">Изучите идеи<br>путешественников</p>
+          </li>
+          <li class="methods-list__item">
+            <span class="methods-list__order">3</span>
+            <p class="methods-list__description">Находите тех,<br>кто похож на вас</p>
+          </li>
+          <li class="methods-list__item">
+            <span class="methods-list__order">4</span>
+            <p class="methods-list__description">Путешествуйте<br>вместе!</p>
+          </li>
+        </ul>
+
+        <h2 class="about-service__title title title--secondary">О сервисе</h2>
+        <p class="about-service__description">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.</p>
+        <p class="about-service__slogan">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</p>
+      </div>
     </section>
 
     <section class="directions">
       <div class="directions__wrapper">
-        <h2 class="directions__title">Направления</h2>
+        <h2 class="directions__title title title--secondary">Направления</h2>
         <p class="directions__text">Мы не продаем туры и ничего не рекламируем.  Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
         <ul class="directions__list countries">
           <li class="countries__item">
-            <img class="countries__image" src="https://via.placeholder.com/270x110" alt="Тайланд">
+            <img class="countries__image" src="img/thailand-mobile@1x.jpg" alt="Тайланд" width="270" height="110">
             <div class="countries__wrapper">
               <h3 class="countries__name">Тайланд</h3>
               <span class="countries__visitors">18321</span>
@@ -88,7 +123,7 @@
             </div>
           </li>
           <li class="countries__item">
-            <img class="countries__image" src="https://via.placeholder.com/270x110" alt="Франция">
+            <img class="countries__image" src="img/france-mobile@1x.jpg" alt="Франция" width="270" height="110">
             <div class="countries__wrapper">
               <h3 class="countries__name">Франция</h3>
               <span class="countries__visitors">12518</span>
@@ -96,7 +131,7 @@
             </div>
           </li>
           <li class="countries__item">
-            <img class="countries__image" src="https://via.placeholder.com/270x110" alt="Чехия">
+            <img class="countries__image" src="img/czech-mobile@1x.jpg" alt="Чехия" width="270" height="110">
             <div class="countries__wrapper">
               <h3 class="countries__name">Чехия</h3>
               <span class="countries__visitors">5326</span>
@@ -110,7 +145,7 @@
 
     <section class="companions">
       <div class="companions__wrapper">
-        <h2 class="companions__title">Попутчики</h2>
+        <h2 class="companions__title title title--secondary">Попутчики</h2>
         <p class="companions__description">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
         <p class="companions__slogan">Теперь можно легко найти единомышленников!</p>
         <ul class="companions__list people people--brief">
@@ -179,7 +214,7 @@
 
     <section class="advertisment">
       <div class="advertisment__wrapper">
-        <h2 class="advertisment__slogan">Добавьте свой профиль</h2>
+        <h2 class="advertisment__slogan title title--secondary">Добавьте свой профиль</h2>
         <ul class="advertisment__list advertising">
           <li class="advertising__item">
             <p class="advertising__description">Базовое размещение</p>

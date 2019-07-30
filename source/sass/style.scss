@@ -1,4 +1,7 @@
+@import "./mixins.scss";
 @import "./fonts.scss";
+@import "./variables.scss";
+@import "./blocks/index.scss";
 
 *,
 *::before,
@@ -8,5 +11,13 @@
 
 body {
   font-size: 16px;
-  font-family: "BloggerSans Light";
+  font-family: "BloggerSans Light", sans-serif;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }

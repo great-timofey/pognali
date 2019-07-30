@@ -1,0 +1,28 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 10px;
+  background-color: $light-gold;
+  padding: 22px;
+  text-decoration: none;
+
+  font-family: "BloggerSans Bold", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: normal;
+  color: $dark-slate-blue;
+
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 14px;
+    background-image: url("../img/triangle-arrow-right.svg");
+    top: 50%;
+    transform: translateY(-50%);
+    right: 25px
+  }
+}
